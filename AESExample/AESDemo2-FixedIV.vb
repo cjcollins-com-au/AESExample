@@ -3,7 +3,11 @@ Imports System.Text
 
 Module AESDemo2FixedIV
 
+    ' Key to use for the encyption and decryption process
+    ' If used in production, find a better way to store and reference the keys
     Private Const AesKey256 As String = "1C77D4721927421390D663C670DBBC47"
+
+    ' fixed IV.  
     Private Const AesIV128 As String = "572CD4703ACA482F"       ' ...don't do this... example only 
 
     Sub EncryptDecryptWithFixedIV()
